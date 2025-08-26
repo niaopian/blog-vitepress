@@ -8,15 +8,15 @@
   
   /* 侧边栏图标 */
   /* 选中所有 .VPSidebarItem 元素，排除带有 .is-link 类的 */
-  VPSidebarNav .VPSidebarItem:not(.is-link).collapsed >.item {
+  #VPSidebarNav .VPSidebarItem:not(.is-link).collapsed >.item {
       display: inline-flex;
       align-items: center;  /* 垂直居中对齐图标和文本 */
   }
   
   /* 为所有不带 .is-link 的 .VPSidebarItem 折叠状态添加图标 */
-  VPSidebarNav .VPSidebarItem:not(.is-link).collapsed >.item::before {
+  #VPSidebarNav .VPSidebarItem:not(.is-link).collapsed >.item::before {
       content: '';
-      background-image: url('/svg/document.svg'); /* 设置图标路径 */
+      background-image: url('../public/svg/document.svg'); /* 设置图标路径 */
       width: 16px;
       height: 16px;
       display: inline-block;
@@ -25,15 +25,15 @@
       margin-right: 4px;  /* 给图标和文本之间增加间距 */
   }
   
-  VPSidebarNav .VPSidebarItem:not(.is-link) >.item {
+  #VPSidebarNav .VPSidebarItem:not(.is-link) >.item {
       display: inline-flex;
       align-items: center;  /* 垂直居中对齐图标和文本 */
   }
   
   /* 为所有不带 .is-link 的 .VPSidebarItem 非折叠状态添加图标 */
-  VPSidebarNav .VPSidebarItem:not(.is-link) >.item::before {
+  #VPSidebarNav .VPSidebarItem:not(.is-link) >.item::before {
       content: '';
-      background-image: url('/svg/document-open.svg'); /* 设置图标路径 */
+      background-image: url('../public/svg/document-open.svg'); /* 设置图标路径 */
       width: 16px;
       height: 16px;
       display: inline-block;
@@ -43,15 +43,15 @@
   }
   
   /* 选中带有 .is-link 的 .VPSidebarItem 的直接子元素 .item */
-  VPSidebarNav .VPSidebarItem.is-link > .item {
+  #VPSidebarNav .VPSidebarItem.is-link > .item {
       display: inline-flex;
       align-items: center;  /* 垂直居中图标和文字 */
   }
   
   /* 为选中的 .item 添加图标 */
-  VPSidebarNav .VPSidebarItem.is-link > .item::before {
+  #VPSidebarNav .VPSidebarItem.is-link > .item::before {
       content: '';
-      background-image: url('/svg/file.svg'); /* 图标路径 */
+      background-image: url('../public/svg/file.svg'); /* 图标路径 */
       width: 16px;
       height: 16px;
       display: inline-block;

@@ -40,7 +40,7 @@ export default defineConfig({
   // head设置
   head: [
     // 浏览器中图标
-    ["link", {rel: "icon", href: "/logo.ico"}],
+    ["link", {rel: "icon", href: "../public/logo.ico"}],
     // 添加百度统计代码
     // ['script', {},
     // `
