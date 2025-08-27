@@ -4,50 +4,13 @@ footer: false
 sidebar: true
 prev: false
 next: false
+draft: true
 ---
 
-# Runtime API Examples
+# 关于我 <Badge type="warning" text="beta" />
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
+广州双非土木仔
 
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
+碍于学校cs专业一年只有5转院名额而不得不深造土建。
 
-```md
-<script setup>
-import { useData } from 'vitepress'
-
-const { theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-```
-
-<script setup>
-import { useData } from 'vitepress'
-
-const { site, theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+优秀的软件安装与卸载专家、windows系统重装工程师、issue求助发起人、宿舍网络瘫痪嫌疑人、githubstar专家

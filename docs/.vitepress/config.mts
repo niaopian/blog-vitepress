@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
-import { nav } from './configs'
+import { nav,sidebar } from './configs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -40,7 +40,7 @@ export default defineConfig({
   // head设置
   head: [
     // 浏览器中图标
-    ["link", {rel: "icon", href: "../public/logo.ico"}],
+    ["link", {rel: "icon", href: "/logo.ico"}],
     // 添加百度统计代码
     // ['script', {},
     // `
@@ -58,55 +58,12 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     // 左上角logo
-    logo: '/logo.png',
+    logo: '/favicon.png',
     externalLinkIcon: true,
     // 首页右上角导航栏
     nav,
     // 文章左侧导航栏
-    sidebar: [
-      {
-        text: '本站',
-        items: [
-          { text: '关于我', link: '/aboutme' },
-          { text: '我的简历', link: '/myresume' },
-          { text: '本站搭建', link: '/aboutsite' }
-        ]
-      },
-      {
-        text: '学习笔记',
-        items: [
-          { text: 'Linux学习', link: '/Linux学习' },
-          { text: 'git', link: '/常用git操作' }
-        ]
-      },
-      {
-        text: '环境配置',
-        items: [
-          { text: 'mac配置一步到位', link: '/mac配置一步到位' },
-        ]
-      },
-      {
-        text: 'Docker',
-        // items: [
-        //   { text: '关于我', link: '/aboutme' },
-        //   { text: '我的简历', link: '/myresume' }
-        // ]
-      },
-      {
-        text: 'Linux/Nas/VPS',
-        // items: [
-        //   { text: '关于我', link: '/aboutme' },
-        //   { text: '我的简历', link: '/myresume' }
-        // ]
-      },
-      {
-        text: '杂项',
-        items: [
-          { text: 'tree命令', link: '/tree命令' },
-          // { text: '我的简历', link: '/myresume' }
-        ]
-      }
-    ],
+    sidebar,
     //侧边栏文字更改(移动端)
     sidebarMenuLabel:'目录', 
     //返回顶部文字修改

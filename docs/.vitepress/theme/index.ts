@@ -14,7 +14,7 @@ let homePageStyle: HTMLStyleElement | undefined
 export default {
   extends: DefaultTheme,
   enhanceApp({app , router }) {
-    // 彩虹背景动画样式
+    //彩虹动画
     if (typeof window !== 'undefined') {
       watch(
         () => router.route.data.relativePath,

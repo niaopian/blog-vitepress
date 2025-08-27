@@ -3,7 +3,7 @@ title: Linux学习
 date: 2025-07-29 15:28:36
 tags: Linux, RHCE9, 系统管理
 ---
-# linux学习笔记
+# linux学习笔记 <Badge type="warning" text="beta" />
 基于Centos7.9
 
 ## Linux 一级目录结构

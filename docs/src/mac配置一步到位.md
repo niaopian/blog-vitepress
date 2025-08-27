@@ -3,7 +3,9 @@ title: mac配置一步到位
 date: 2025-07-30 19:10:25
 tags:
 ---
-# mac配置一步到位
+# mac配置一步到位 <Badge type="warning" text="beta" />
+
+基于 macOS Sequoia 15.6
 ## 系统设置
 
 ### 访达
